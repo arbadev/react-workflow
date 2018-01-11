@@ -1,35 +1,32 @@
-# KOGI mobile code challenge
-KOGI code task nodejs
+# React workflow
+Initial react base
 
 Table of Contents
 -----------------
 
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
+- [Installation](#installation)
 
-Prerequisites
--------------
-
-- [MongoDB](https://www.mongodb.org/downloads)
-- [Node.js 6.0+](http://nodejs.org)
-
-Getting Started
+Installation
 ---------------
 
 The way to get started this project is to clone the repository:
 
 ```bash
 # Get repository from github
-git clone https://github.com/arbadev/kogi-challenge.git projectName
+git clone https://github.com/arbadev/react-workflow.git projectName
 
 # Change directory
 cd projectName
 
 # Install NPM dependencies
-npm / yarn install (preferably yarn)
+npm / yarn install
 
-# Start the server with
-npm / yarn start  // url: 'http://localhost:8443/'
+# Start dev server with
+npm / yarn run serve  // url: 'http://localhost:8080/'
 
-# Run unit test
-npm / yarn run test (preferably yarn)
+# Start server with
+
+npm / yarn start  // url: 'http://localhost:8080/'
+
+# Run production build
+npm / yarn run production
