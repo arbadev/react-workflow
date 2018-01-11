@@ -1,0 +1,28 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+    "semi": [2, "never"],
+    "max-len": [1, 120, 2, {"ignoreComments": true}],
+    "arrow-body-style": [0, "never"],
+    "react/require-default-props": 0,
+    "react/prefer-stateless-function": 0,
+    "react/forbid-prop-types": [0, { "forbid": ["any", "array", "object"] }],
+    "react/jsx-filename-extension": [2, {"extensions": [".js", ".jsx"]}],
+    "no-underscore-dangle": 0,
+    "react/sort-comp": [1, {
+      "order": [
+        "static-methods",
+        "lifecycle",
+        "/^on.+$/",
+        "everything-else",
+        "render"
+      ]
+    }],
+    "react/jsx-max-props-per-line": [1, { "maximum": 2, "when": "multiline" }],
+    "react/jsx-first-prop-new-line": [0, "never"]
+  }
+}
