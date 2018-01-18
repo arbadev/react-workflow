@@ -6,21 +6,17 @@ import {
 } from '../actions/user'
 
 const initialState = {
-  user: {
-    username: null,
-    error: null,
-    fetching: false,
-  },
+  username: 'And3',
+  error: null,
+  fetching: false,
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case SET_USER_NAME: {
-      console.log('action @ SET_USER_NAME', action)
+      const { username } = action
       return update(state, {
-        user: {
-          username: { $set: action.username },
-        },
+        username: { $set: username },
       })
     }
     default:

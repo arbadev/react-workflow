@@ -4,7 +4,7 @@ import styles from './header.css'
 function Header() {
   return (
     <header className={styles.root}>
-      <h1 className={styles.logo}>React Workflow</h1>
+      <h1 className={styles.logo}>React-redux Workflow</h1>
     </header>
   )
 }

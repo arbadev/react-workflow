@@ -11,6 +11,7 @@ import { setUserName } from '../../actions/user'
 
 const propTypes = {
   user: PropTypes.object,
+  setUserName: PropTypes.func,
 }
 
 class Main extends Component {
@@ -18,15 +19,42 @@ class Main extends Component {
     super(props)
 
     this.state = {
+      username: this.props.user.username,
     }
+
+    this.handleSetName = this.handleSetName.bind(this)
+    this.handleInputChange = this.handleInputChange.bind(this)
+  }
+
+  handleSetName(event, username) {
+    event.preventDefault()
+    this.setState({ username })
+    this.props.setUserName(username)
+  }
+
+  handleInputChange(event) {
+    event.preventDefault()
+    const { target } = event
+    this.setState({ username: target.value })
   }
 
   render() {
     const { user } = this.props
-    console.log('user', user)
+    const { username } = this.state
     return (
       <div>
-        <h1>Hola mundo!</h1>
+        <div>
+          <button onClick={e => this.handleSetName(e, username)}>
+            setUserName
+          </button>
+          <input
+            name="inputText"
+            type="text"
+            value={username}
+            onChange={this.handleInputChange}
+          />
+        </div>
+        <h1>Hola {user.username}!</h1>
       </div>
     )
   }
