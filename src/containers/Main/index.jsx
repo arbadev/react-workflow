@@ -44,7 +44,12 @@ class Main extends Component {
     return (
       <div>
         <div>
-          <button onClick={e => this.handleSetName(e, username)}>
+          {/*
+            you can call directly the action or if you want to do something
+            before you can call a component function and do stuff before call
+            the action, see handleSetName function
+          */}
+          <button onClick={() => this.props.setUserName(username)}>
             setUserName
           </button>
           <input
