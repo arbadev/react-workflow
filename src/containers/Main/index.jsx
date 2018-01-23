@@ -4,9 +4,13 @@ import { connect } from 'react-redux'
 // import { Link } from 'react-router'
 
 /*
+ * Components
+*/
+import InputMolecule from '../../components/InputMolecule'
+
+/*
  * Actions
 */
-
 import { setUserName } from '../../actions/user'
 
 const propTypes = {
@@ -26,9 +30,9 @@ class Main extends Component {
     this.handleInputChange = this.handleInputChange.bind(this)
   }
 
-  handleSetName(event, username) {
+  handleSetName(event) {
     event.preventDefault()
-    this.setState({ username })
+    const { username } = this.state
     this.props.setUserName(username)
   }
 
@@ -42,25 +46,12 @@ class Main extends Component {
     const { user } = this.props
     const { username } = this.state
     return (
-      <div>
-        <div>
-          {/*
-            you can call directly the action or if you want to do something
-            before you can call a component function and do stuff before call
-            the action, see handleSetName function
-          */}
-          <button onClick={() => this.props.setUserName(username)}>
-            setUserName
-          </button>
-          <input
-            name="inputText"
-            type="text"
-            value={username}
-            onChange={this.handleInputChange}
-          />
-        </div>
-        <h1>Hola {user.username}!</h1>
-      </div>
+      <InputMolecule
+        stateUsername={username}
+        reduxUsername={user.username}
+        onTextChange={this.handleInputChange}
+        onSetName={this.handleSetName}
+      />
     )
   }
 }
@@ -72,10 +63,9 @@ const mapStateToProps = (state) => {
 }
 
 const matchDispatchToProps = (dispatch) => {
-  return bindActionCreators(
-    {
-      setUserName,
-    }, dispatch)
+  return bindActionCreators({
+    setUserName,
+  }, dispatch)
 }
 
 Main.propTypes = propTypes
