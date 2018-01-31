@@ -6,12 +6,12 @@ import styled from 'styled-components'
 */
 const Button = styled.button`
   background: tomato;
-  border-radius: 3px;
-  border: 2px solid white;
+  border-radius: 0.3rem;
+  border: 0.2rem solid white;
   color: white;
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 20rem;
 `
 
 export default Button

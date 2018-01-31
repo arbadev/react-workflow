@@ -6,12 +6,12 @@ import styled from 'styled-components'
 */
 const Label = styled.label`
   background: tomato;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   border: none;
   color: white;
-  padding: 10px;
-  margin: 10px;
-  width: 180px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 18rem;
 `
 
 export default Label

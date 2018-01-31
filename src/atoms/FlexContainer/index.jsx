@@ -14,10 +14,10 @@ const FlexContainer = styled.div`
   align-content: ${props => props.alignContent || 'center'};
 
   background: ${props => props.background || 'Gainsboro'};
-  border-radius: ${props => props.borderRadius || 3}px;
-  padding: ${props => props.padding || 10}px;
-  width: ${props => props.width || 500}px;
-  height: ${props => props.height || 500}px;
+  border-radius: ${props => props.borderRadius || 0.3}rem;
+  padding: ${props => props.padding || 1}rem;
+  width: ${props => props.width || 50}rem;
+  height: ${props => props.height || 50}rem;
   margin:0 auto;
 `
 export default FlexContainer

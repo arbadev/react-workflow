@@ -10,12 +10,12 @@ const Input = styled.input.attrs({
   defaultValue: props => props.defaultValue,
 })`
   background: mintcream;
-  border-radius: 1px;
+  border-radius: 0.1rem;
   border: none;
   color: dimgray;
-  padding: 10px;
-  margin: 10px;
-  width: 180px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 18rem;
 `
 
 export default Input

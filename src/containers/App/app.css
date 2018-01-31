@@ -1,4 +1,9 @@
 body {
-  margin: 0 auto;
   background-color: #eee;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 10px;
 }

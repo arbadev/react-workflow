@@ -24,7 +24,7 @@ function InputMolecule(props) {
     <FlexContainer
       justifyContent="space-around"
       flexWrap="wrap"
-      height={200}
+      height={20}
     >
       <Input
         defaultValue={props.stateUsername}
