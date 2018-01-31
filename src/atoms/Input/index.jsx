@@ -9,10 +9,10 @@ const Input = styled.input.attrs({
   size: props => props.large ? 15 : 8,
   defaultValue: props => props.defaultValue,
 })`
-  background: palevioletred;
-  border-radius: 3px;
+  background: mintcream;
+  border-radius: 1px;
   border: none;
-  color: white;
+  color: dimgray;
   padding: 10px;
   margin: 10px;
   width: 180px;

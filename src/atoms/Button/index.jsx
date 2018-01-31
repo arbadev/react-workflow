@@ -5,9 +5,9 @@ import styled from 'styled-components'
 *  would be there if no value is defined, its like a default value
 */
 const Button = styled.button`
-  background: palevioletred;
+  background: tomato;
   border-radius: 3px;
-  border: none;
+  border: 2px solid white;
   color: white;
   padding: 10px;
   margin: 10px;
