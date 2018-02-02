@@ -1,4 +1,18 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  margin: 0 auto;
   background-color: #eee;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
 }

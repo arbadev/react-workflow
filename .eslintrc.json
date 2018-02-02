@@ -23,6 +23,8 @@
       ]
     }],
     "react/jsx-max-props-per-line": [1, { "maximum": 2, "when": "multiline" }],
-    "react/jsx-first-prop-new-line": [0, "never"]
+    "react/jsx-first-prop-new-line": [0, "never"],
+    "no-console": [0, "never"],
+    "no-confusing-arrow": [0, "never"]
   }
 }
